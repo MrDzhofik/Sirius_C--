@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1635545575 source:c:\users\djafa\c++\sirius\first\main.cpp
+	<iostream>
+
+1635544714 source:c:\users\djafa\c++\sirius\first\proverka.cpp
+	<iostream>
+	<string>
+
