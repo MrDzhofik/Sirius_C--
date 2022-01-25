@@ -3,26 +3,47 @@
 using namespace std;
 
 int main(){
-    int a, b, c, ans;
+    int a, b, c, temp;
     cin >> a >> b >> c;
-    ans = a;
-    if (b > c) {
-        if (a < b) {
-            ans = b;
-        }
+    if (a > b){
+        temp = a;
+        a = b;
+        b = temp;
     }
-    else if (b < c){
-        if (a < c) {
-            ans = c;
-        }
+    if (a > c){
+        temp = a;
+        a = c;
+        c = temp;
     }
-    else if (a < c) {
-        ans = c;
+    if (b > c){
+        temp = b;
+        b = c;
+        c = temp;
     }
-    else {
-        ans = b;
-    }
-    cout << ans;
+    cout << a << endl << b << endl << c << endl;
+//    int a, b, c, ans;
+//    cin >> a >> b >> c;
+//    ans = a;
+//    if (b > c) {
+//        if (a < b) {
+//            ans = b;
+//        }
+//    }
+//    else if (b < c){
+//        if (a < c) {
+//            ans = c;
+//        }
+//    }
+//    else if (a < c) {
+//        ans = c;
+//    }
+//    else if (a > c){
+//        ans = a;
+//    }
+//    else {
+//        ans = b;
+//    }
+//    cout << ans;
 //    int a, b, ans;
 //    cin >> a >> b;
 //    if (a > b){
@@ -43,9 +64,10 @@ int main(){
 //    else {
 //        cout << "NO";
 //    }
+// finish this program{
 //    int a, b, c, d;
 //    cin >> a >> b >> c >> d;
-//    if (a - c == b - d) {
+//    if ((a - b == d - b) || (b - a == d - c) || (a + b == c + d)) {
 //        cout << "YES";
 //    }
 //    else {
@@ -58,6 +80,7 @@ int main(){
 //    }
 //    else {
 //        cout << "NO";
+//    }
 //    }
 //    int a, b, c, d;
 //    cin >> a >> b >> c >> d;
