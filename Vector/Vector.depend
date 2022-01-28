@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1643404072 source:c:\users\djafa\c++\sirius\vector\main.cpp
+	<iostream>
+	<vector>
+
